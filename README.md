@@ -1,6 +1,6 @@
 # Complaint-Management-System
 
-A Complaint Management System built using Python and Django (Indian Oil Corporation Limited (IOCL) internship project)
+A Complaint Management System built using Python and Django .
 
 ## How to setup?
 1. Install `Python 3.8.9`
