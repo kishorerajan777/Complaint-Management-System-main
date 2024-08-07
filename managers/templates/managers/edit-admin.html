@@ -1,0 +1,39 @@
+{% extends "managers/base.html" %}
+{% load static %}
+
+{% block title %}
+User Register
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+<div class="d-flex align-items-center justify-content-center h-100">
+    <div class="card mt-4 mb-4 w-100 mxw-500">
+        <div class="card-body">
+            <form action="" class="form mb-3" method="POST">
+                <h4>Edit Admin</h4>
+                <hr>
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" value="{{ user.firstName }}" name="firstName" placeholder="Enter your first name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" value="{{ user.lastName }}" name="lastName" placeholder="Enter your last name" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" value="{{ user.email }}" name="email" placeholder="Enter your email" class="form-control" required>
+                </div>
+                {% csrf_token %}
+                <input type="submit" value="Save Changes" class="btn btn-success w-100">
+            </form>            
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
